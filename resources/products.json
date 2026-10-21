@@ -1,0 +1,109 @@
+{
+    "products": [
+        {
+            "id": "21034",
+            "name": "London",
+            "category": "Architecture",
+            "link": "https://he.aliexpress.com/item/1005006665237790.html?src=google&src=google&albch=shopping&acnt=677-394-9260&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oFgTQeV&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=he1005006665237790&ds_e_product_merchant_id=5853143737&ds_e_product_country=IL&ds_e_product_language=iw&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=24215801641&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=24215828158&gbraid=0AAAABCtupDP9azL2QLNLGjnCP58Au7hRH&gclid=CjwKCAjwxeHWBhBPEiwAiqtQ-QfZ2j8lB-T_KaZV_bXO_DVfx1xazb_iI1r1sNcKzN946VO-O_TUTBoCgMgQAvD_BwE&gatewayAdapt=glo2isr",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21047",
+            "name": "Las Vegas",
+            "category": "Architecture",
+            "link": "https://he.aliexpress.com/item/1005006638301753.html?src=google&pdp_npi=4%40dis%21ILS%21185.34%2159.39%21%21%21%21%21%40%2112000037895866206%21ppc%21%21%21&src=google&albch=shopping&acnt=179-224-6891&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oFgTQeV&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en1005006638301753&ds_e_product_merchant_id=5853143737&ds_e_product_country=ZZ&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=22964893398&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22971141590&gbraid=0AAAABBR8xIeYsRBNCYQ6BraC5lbfVUlaO&gclid=CjwKCAjwxeHWBhBPEiwAiqtQ-QN-uMzaRyUHJ0ujGh1KKl5AKaMvOPrGdT_-yQQDjyKCrXCfr62YCBoCy0AQAvD_BwE&gatewayAdapt=glo2isr",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21027",
+            "name": "Berlin",
+            "category": "Architecture",
+            "link": "https://he.aliexpress.com/item/1005005669253823.html?src=google&pdp_npi=4%40dis%21ILS%2146.13%2142.44%21%21%21%21%21%40%2112000033957746438%21ppc%21%21%21&src=google&albch=shopping&acnt=179-224-6891&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oFgTQeV&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en1005005669253823&ds_e_product_merchant_id=502859367&ds_e_product_country=ZZ&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=22964893398&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22971141590&gbraid=0AAAABBR8xIeYsRBNCYQ6BraC5lbfVUlaO&gclid=CjwKCAjwxeHWBhBPEiwAiqtQ-WC4bxG93NCrzP5zKpadmUpKlTAvxv5pl085NKckd_S2k1J4roKiuhoCcs4QAvD_BwE&gatewayAdapt=glo2isr",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21028",
+            "name": "New York ",
+            "category": "Architecture",
+            "link": "https://he.aliexpress.com/item/1005012521925352.html?spm=a2g0o.productlist.main.3.133brqxArqxALU&algo_pvid=a23e147b-c4b5-4612-a820-fe0f15881123&algo_exp_id=a23e147b-c4b5-4612-a820-fe0f15881123-2&pdp_ext_f=%7B%22order%22%3A%22-1%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21ILS%21109.27%2190.69%21%21%21230.92%21191.66%21%402101364a17926127363933305e0d53%2112000058596729539%21sea%21IL%21902112614%21X%211%210%21n_tag%3A-29919%3Bd%3Ad73e5f88%3Bm03_new_user%3A-29895&curPageLogUid=jshAyYF201GK&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012521925352%7C_p_origin_prod%3A",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21068",
+            "name": "Shanghai",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21044",
+            "name": "Paris",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21057",
+            "name": "Singapore",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21052",
+            "name": "Dubai",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21051",
+            "name": "Tokyo",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21043",
+            "name": "San Francisco",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21033",
+            "name": "Chicago",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21032",
+            "name": "Sydney",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21026",
+            "name": "Venice",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "21036",
+            "name": "Arc de Triomphe",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "N/A",
+            "name": "Chrysler Building",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        }
+    ]
+}

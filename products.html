@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore BrickArc's collection of architecture models inspired by landmarks around the world."
+    />
+    <title>Architecture Models | BrickArc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #153b3a;
+        --muted: #55706c;
+        --paper: #f4f7ef;
+        --white: #fffefa;
+        --orange: #f15c38;
+        --yellow: #f2db58;
+        --line: #d9e1d8;
+        --display: "Barlow Condensed", Impact, sans-serif;
+        --body: "DM Sans", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: var(--body);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-header {
+        position: sticky;
+        z-index: 5;
+        top: 0;
+        display: flex;
+        min-height: 82px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        padding: 16px clamp(22px, 6vw, 92px);
+        border-bottom: 1px solid var(--line);
+        background: rgb(244 247 239 / 94%);
+        backdrop-filter: blur(14px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        font-size: 23px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--white);
+        background: var(--orange);
+        font-family: var(--display);
+        font-size: 19px;
+        line-height: 1;
+      }
+
+      .home-link {
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .home-link:hover {
+        color: var(--orange);
+      }
+
+      main {
+        width: min(100% - 44px, 1280px);
+        flex: 1;
+        margin: 0 auto;
+        padding: clamp(48px, 8vh, 88px) 0 76px;
+      }
+
+      .page-intro {
+        margin-bottom: 38px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 22px;
+        height: 3px;
+        background: var(--orange);
+        content: "";
+      }
+
+      h1 {
+        margin: 0;
+        font-family: var(--display);
+        font-size: clamp(52px, 7vw, 82px);
+        font-weight: 800;
+        line-height: 0.95;
+      }
+
+      .intro-note {
+        max-width: 540px;
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+
+      .product-count {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .product-card {
+        display: flex;
+        min-height: 242px;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--white);
+        text-decoration: none;
+        transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      }
+
+      a.product-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--orange);
+        box-shadow: 0 9px 22px rgb(21 59 58 / 9%);
+      }
+
+      a.product-card:focus-visible,
+      .home-link:focus-visible {
+        outline: 2px solid var(--orange);
+        outline-offset: 4px;
+      }
+
+      .card-art {
+        position: relative;
+        display: grid;
+        min-height: 152px;
+        flex: 1;
+        place-items: center;
+        overflow: hidden;
+        background: var(--yellow);
+      }
+
+      .card-art::before,
+      .card-art::after {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgb(21 59 58 / 13%);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .card-art::after {
+        width: 174px;
+        height: 174px;
+      }
+
+      .card-art span {
+        z-index: 1;
+        color: var(--ink);
+        font-family: var(--display);
+        font-size: 76px;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .product-card:nth-child(4n + 2) .card-art {
+        background: #d8e8df;
+      }
+
+      .product-card:nth-child(4n + 3) .card-art {
+        background: #f4c8b5;
+      }
+
+      .product-card:nth-child(4n) .card-art {
+        background: #d3d9ea;
+      }
+
+      .card-copy {
+        display: flex;
+        min-height: 88px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 16px;
+      }
+
+      .card-name {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .card-category {
+        margin: 5px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .card-action {
+        flex: 0 0 auto;
+        color: var(--orange);
+        font-size: 20px;
+        line-height: 1;
+      }
+
+      .unavailable .card-action {
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 600;
+        text-align: right;
+      }
+
+      .status-message {
+        margin: 0;
+        padding: 22px;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        background: var(--white);
+        line-height: 1.6;
+      }
+
+      .status-message[hidden] {
+        display: none;
+      }
+
+      .site-footer {
+        display: flex;
+        min-height: 62px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px clamp(22px, 6vw, 92px);
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .footer-note {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .product-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 650px) {
+        .site-header {
+          min-height: 72px;
+          padding-inline: 20px;
+        }
+
+        .brand {
+          gap: 8px;
+          font-size: 20px;
+        }
+
+        .brand-mark {
+          width: 27px;
+          height: 27px;
+          font-size: 17px;
+        }
+
+        main {
+          width: min(100% - 40px, 560px);
+          padding-block: 52px 58px;
+        }
+
+        .product-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+
+        .product-card {
+          min-height: 214px;
+        }
+
+        .card-art {
+          min-height: 126px;
+        }
+
+        .card-copy {
+          min-height: 82px;
+          padding: 12px;
+        }
+
+        .card-name {
+          font-size: 14px;
+        }
+
+        .site-footer {
+          padding-inline: 20px;
+        }
+      }
+
+      @media (max-width: 410px) {
+        .site-header {
+          padding-inline: 14px;
+        }
+
+        main {
+          width: calc(100% - 32px);
+        }
+
+        .product-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .product-card {
+          min-height: 0;
+          flex-direction: row;
+        }
+
+        .card-art {
+          min-height: 110px;
+          flex: 0 0 38%;
+        }
+
+        .card-art span {
+          font-size: 58px;
+        }
+
+        .card-copy {
+          flex: 1;
+        }
+
+        .site-footer {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 6px;
+          padding-block: 14px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="BrickArc home">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        BrickArc
+      </a>
+      <a class="home-link" href="index.html">Back to home</a>
+    </header>
+
+    <main>
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow">A world of architecture, brick by brick</p>
+        <h1 id="page-title">Landmarks to build</h1>
+        <p class="intro-note">
+          Discover miniature tributes to remarkable places, from celebrated city skylines to
+          architectural icons.
+        </p>
+      </section>
+      <p class="product-count" id="product-count" aria-live="polite"></p>
+      <section
+        class="product-grid"
+        id="product-grid"
+        aria-label="Architecture model products"
+      ></section>
+      <p class="status-message" id="status-message" role="status">Loading products…</p>
+    </main>
+
+    <footer class="site-footer">
+      <span>All rights reserved <span id="year"></span></span>
+      <span class="footer-note">Made for curious builders.</span>
+    </footer>
+
+    <script>
+      const productGrid = document.getElementById("product-grid");
+      const productCount = document.getElementById("product-count");
+      const statusMessage = document.getElementById("status-message");
+
+      function getProductUrl(product) {
+        const candidate = product.affiliated_link || product.link;
+
+        if (!candidate) {
+          return null;
+        }
+
+        try {
+          const url = new URL(candidate);
+          return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+        } catch {
+          return null;
+        }
+      }
+
+      function createProductCard(product) {
+        const url = getProductUrl(product);
+        const card = document.createElement(url ? "a" : "article");
+        card.className = `product-card${url ? "" : " unavailable"}`;
+
+        if (url) {
+          card.href = url;
+          card.target = "_blank";
+          card.rel = "noopener noreferrer";
+          card.setAttribute(
+            "aria-label",
+            `${product.name}, view product details (opens in a new tab)`,
+          );
+        }
+
+        const art = document.createElement("div");
+        art.className = "card-art";
+        art.setAttribute("aria-hidden", "true");
+
+        const initial = document.createElement("span");
+        initial.textContent = product.name.trim().charAt(0) || "B";
+        art.append(initial);
+
+        const copy = document.createElement("div");
+        copy.className = "card-copy";
+
+        const details = document.createElement("div");
+        const name = document.createElement("h2");
+        name.className = "card-name";
+        name.textContent = product.name;
+
+        const category = document.createElement("p");
+        category.className = "card-category";
+        category.textContent = product.category;
+        details.append(name, category);
+
+        const action = document.createElement("span");
+        action.className = "card-action";
+        action.textContent = url ? "↗" : "Coming soon";
+        action.setAttribute("aria-hidden", "true");
+        copy.append(details, action);
+        card.append(art, copy);
+
+        return card;
+      }
+
+      async function loadProducts() {
+        if (window.location.protocol === "file:") {
+          statusMessage.textContent =
+            "Product data cannot load from a file:// URL. Open BrickArc with the VS Code 'Open BrickArc' launch configuration or serve this folder over HTTP.";
+          return;
+        }
+
+        try {
+          const response = await fetch("resources/products.json");
+          if (!response.ok) {
+            throw new Error(`Product data request failed with status ${response.status}`);
+          }
+
+          const data = await response.json();
+          if (!Array.isArray(data.products)) {
+            throw new Error("Product data must contain a products array");
+          }
+
+          const products = data.products.filter(
+            (product) =>
+              product &&
+              typeof product.name === "string" &&
+              typeof product.category === "string",
+          );
+
+          if (products.length === 0) {
+            statusMessage.textContent = "No products are available right now.";
+            return;
+          }
+
+          productGrid.append(...products.map(createProductCard));
+          productCount.textContent = `${products.length} architecture models`;
+          statusMessage.hidden = true;
+        } catch (error) {
+          console.error("Unable to load products:", error);
+          statusMessage.textContent = "Products could not be loaded. Please try again later.";
+        }
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+      loadProducts();
+    </script>
+  </body>
+</html>
