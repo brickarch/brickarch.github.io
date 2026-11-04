@@ -99,8 +99,15 @@
             "affiliated_link": ""
         },
         {
-            "id": "N/A",
+            "id": "AE1000",
             "name": "Chrysler Building",
+            "category": "Architecture",
+            "link": "",
+            "affiliated_link": ""
+        },
+        {
+            "id": "AE1001",
+            "name": "steinway Tower",
             "category": "Architecture",
             "link": "",
             "affiliated_link": ""
